@@ -1,114 +1,94 @@
-# Framer Motion Skill for AI Coding Agents
+# Framer Motion Showcase
 
-**A comprehensive context package for Claude Code and AI coding agents to build polished, production-ready animated frontends.**
+Complete interactive showcase with 213 Framer Motion examples across 24 categories.
 
-## What is This?
+## Features
 
-This repo contains a **skill file** designed to give AI coding assistants (like Claude Code, Cursor, Windsurf, etc.) deep context about Framer Motion animation patterns. When loaded into an AI's context, it enables the AI to:
+- **213 Interactive Components** - All with live demos and copy-to-clipboard code
+- **30 Workflow Automation Components** - Schedulers, debuggers, node canvas, data mappers
+- **Premium Effects** - Meteors, aurora, particles, morphing shapes, DNA helix
+- **Practical UI Patterns** - Accordions, tabs, carousels, modals, forms, charts
+- **24 Categories** - Layout, Scroll, Text, 3D, Heroes, Analytics, Stock Market, and more
+- **Next.js 14 App Router** - Modern React with static export
 
-- Write production-quality Framer Motion code
-- Apply proper animation design principles
-- Use correct spring physics and easing
-- Implement advanced patterns (3D, parallax, shared layouts)
-- Follow performance best practices
-- Create accessible animations (respects `prefers-reduced-motion`)
+## Live Demo
 
-## Contents
+View live at: [aliabassi.com/framer-motion-showcase](https://www.aliabassi.com/framer-motion-showcase/)
 
-| File | Description |
-|------|-------------|
-| `SKILL.md` | The skill context file - design principles, API reference, patterns, and best practices |
-| `framer-motion-ultimate.html` | 101 working demo components - open in browser to preview |
+## Local Development
 
-## How to Use
+```bash
+# Install dependencies
+npm install
 
-### With Claude Code
+# Run dev server
+npm run dev
 
-1. Copy `SKILL.md` to your Claude Code skills directory:
-   ```bash
-   cp SKILL.md ~/.claude/skills/framer-motion/SKILL.md
-   ```
+# Open http://localhost:3000
+```
 
-2. The skill will be automatically loaded when you work on React animation tasks.
+## Build
 
-### With Other AI Assistants
+```bash
+# Build static site
+npm run build
 
-Paste the contents of `SKILL.md` into your AI's context or system prompt when working on frontend animations.
+# Output in ./out directory
+```
 
-### As a Reference
+## Structure
 
-Open `framer-motion-ultimate.html` in your browser to see all 101 patterns in action. Each demo is self-contained and can be copied into your projects.
+```
+framer-motion-showcase/
+├── app/
+│   ├── page.jsx              # Main showcase app
+│   ├── layout.tsx            # Root layout
+│   └── globals.css           # Global styles
+├── components/
+│   └── demos/                # All 213 demo components
+│       ├── WorkflowBuilderDemo.jsx
+│       ├── NodeCanvasDemo.jsx
+│       └── ... 211 more
+├── lib/
+│   ├── categories.js         # Category definitions
+│   ├── demoNames.js          # Component display names
+│   └── demoRegistry.js       # Component registry
+└── next.config.js            # Next.js config with basePath
+```
 
-## What's in SKILL.md?
+## Categories
 
-### Design Principles
-- Motion should have purpose (guide attention, provide feedback, show relationships)
-- The 12 Principles of Animation applied to UI
-- Duration and easing guidelines
-- 60fps performance rules
-- Accessibility considerations
+- **Layout** - App Store transitions, reorderable lists, accordions
+- **Scroll** - Parallax, hero effects, horizontal scroll
+- **Text** - Scramble, reveal, flip, typewriter effects
+- **3D** - Cards, cubes, books, carousels, tilt galleries
+- **Premium** - Meteors, holographic cards, aurora effects
+- **Workflow Automation** - Builders, schedulers, node systems
+- **Stock Market** - Tickers, candlestick charts, order books
+- **Voice Chat** - Waveforms, spectrograms, voice orbs
+- **Analytics** - Line, bar, area, radar, scatter charts
+- And 15+ more categories...
 
-### API Coverage
-- Basic animations (`animate`, `initial`, `exit`)
-- Gestures (`whileHover`, `whileTap`, `drag`)
-- Spring physics (stiffness, damping, mass)
-- Layout animations (`layout`, `layoutId`)
-- Scroll animations (`useScroll`, `useTransform`)
-- Motion values (`useMotionValue`, `useSpring`, `useMotionTemplate`)
-- Variants and orchestration
+## Deployment
 
-### 20+ Ready-to-Use Patterns
-- Magnetic button
-- 3D card tilt
-- Spotlight effect
-- Stagger grid
-- Text blur reveal
-- Spring-animated counter
-- Parallax depth
-- And more...
+The showcase is configured to work in a subdirectory with `basePath: '/framer-motion-showcase'`.
 
-### Spring Physics Guide
+To deploy elsewhere, update the basePath in `next.config.js`:
 
-| Effect | Stiffness | Damping | Mass | Use Case |
-|--------|-----------|---------|------|----------|
-| Snappy UI | 300-500 | 25-35 | 0.5-1 | Buttons, toggles |
-| Smooth | 100-200 | 20-30 | 1 | Page transitions |
-| Bouncy | 300-400 | 10-15 | 1 | Playful interactions |
-| Heavy | 100 | 30-40 | 2-3 | Dragging large elements |
-| Elastic | 200 | 5-10 | 1 | Notifications, alerts |
+```js
+const nextConfig = {
+  basePath: '/your-path', // or remove for root deployment
+  // ...
+};
+```
 
-## Demo Categories (101 Total)
+## Tech Stack
 
-- **Basics** (10) - Hover, tap, spring, keyframes, gestures
-- **Layout** (10) - App Store expand, reorder, accordion, tabs, shared layout
-- **Scroll** (10) - Parallax, horizontal scroll, progress, reveal, velocity
-- **Text** (10) - Scramble, blur reveal, typewriter, split, gradient
-- **Interaction** (10) - Magnetic, cursor follow, drag, swipe cards
-- **Effects** (10) - Aurora, particles, blob, morph, liquid
-- **3D** (10) - Flip card, cube, book, carousel, tilt, parallax
-- **UI** (10) - Notifications, skeleton, counter, bento, pricing
-- **Pro** (11) - Border beam, spotlight, orbit, shimmer, pulse
-- **Premium+** (10) - Meteors, holographic, confetti, typing cursor
-
-## Why This Exists
-
-AI coding assistants are powerful but need context to produce high-quality, idiomatic code. This skill provides:
-
-1. **Design knowledge** - Not just API syntax, but when and why to use animations
-2. **Best practices** - Performance, accessibility, and UX considerations
-3. **Working examples** - 101 demos that prove the patterns work
-4. **Quick reference** - Easy lookup tables for common needs
+- **Next.js 14** - App Router with static export
+- **Framer Motion 11** - Animation library
+- **React 18** - UI library
+- **TypeScript** - Type safety
 
 ## License
 
-MIT - Use freely in your projects and AI workflows.
-
-## Contributing
-
-PRs welcome! If you have animation patterns that should be included, open a PR with:
-1. The pattern added to `SKILL.md`
-2. A working demo added to `framer-motion-ultimate.html`
-
----
-
-**Built for the AI-assisted development era.**
+MIT
