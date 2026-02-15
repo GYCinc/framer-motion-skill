@@ -11,9 +11,9 @@ Complete interactive showcase with 213 Framer Motion examples across 24 categori
 - **24 Categories** - Layout, Scroll, Text, 3D, Heroes, Analytics, Stock Market, and more
 - **Next.js 14 App Router** - Modern React with static export
 
-## Live Demo
+## 🤖 For AI Agents
 
-View live at: [aliabassi.com/framer-motion-showcase](https://www.aliabassi.com/framer-motion-showcase/)
+See [AGENTS.md](./AGENTS.md) for detailed instructions on how to navigate, understand, and contribute to this project. This file includes pattern templates, project structure, and key file locations.
 
 ## Local Development
 
@@ -40,6 +40,7 @@ npm run build
 
 ```
 framer-motion-showcase/
+├── AGENTS.md             # Guide for AI Agents & Developers
 ├── app/
 │   ├── page.jsx              # Main showcase app
 │   ├── layout.tsx            # Root layout
