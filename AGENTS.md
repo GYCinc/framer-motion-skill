@@ -5,10 +5,12 @@
 This file is your primary guide to navigating, understanding, and contributing to the **Framer Motion Showcase** project.
 
 ### 🎯 Project Overview
-This repository is a comprehensive showcase of **Framer Motion** animations and interactive components, built with **Next.js 14** (App Router). It features over 200 examples across various categories like 3D, Text, Scroll, and Workflow Automation.
+This repository is a comprehensive showcase of **Framer Motion** animations and interactive components, built with **Next.js 16** (App Router). It features over 200 examples across various categories like 3D, Text, Scroll, and Workflow Automation.
 
 ### 🛠 Tech Stack
-- **Framework**: Next.js 14 (App Router)
+- **CMS**: Sanity 5.18
+- **AI**: OpenAI
+- **Framework**: Next.js 16 (App Router)
 - **Animation**: Framer Motion 11
 - **Language**: TypeScript / JavaScript (Note: Project uses `.jsx` for components but supports TS via `tsconfig.json`)
 - **Styling**: Custom CSS (via `app/globals.css`). No Tailwind CSS.

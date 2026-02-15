@@ -9,7 +9,7 @@ Complete interactive showcase with 213 Framer Motion examples across 24 categori
 - **Premium Effects** - Meteors, aurora, particles, morphing shapes, DNA helix
 - **Practical UI Patterns** - Accordions, tabs, carousels, modals, forms, charts
 - **24 Categories** - Layout, Scroll, Text, 3D, Heroes, Analytics, Stock Market, and more
-- **Next.js 14 App Router** - Modern React with static export
+- **Next.js 16 App Router** - Modern React with static export
 
 ## 🤖 For AI Agents
 
@@ -85,9 +85,11 @@ const nextConfig = {
 
 ## Tech Stack
 
-- **Next.js 14** - App Router with static export
+- **Next.js 16** - App Router with static export
 - **Framer Motion 11** - Animation library
-- **React 18** - UI library
+- **React 19** - UI library
+- **CMS**: Sanity 5.18
+- **AI**: OpenAI
 - **TypeScript** - Type safety
 
 ## License
